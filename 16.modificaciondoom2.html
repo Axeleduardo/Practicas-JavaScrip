@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="lista">
+        <li id="primero">Lorem ipsum <b> dolor </b> sit amet.</li>
+        <li>Asperiores ad, qu</li>
+           </ol>
+           <script>
+               var elemento= document.createElement("li");
+               contenido=document.createTextNode("Nuevo texto");
+               elemento.appendChild(contenido);
+               var padre=document.getElementsByTagName("li")[0].parentNode;
+               referencia=document.getElementsByTagName("li")[0];
+               padre.removeChild(referencia);
+            </script>
+</body>
+</html>

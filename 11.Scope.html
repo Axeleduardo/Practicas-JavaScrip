@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        var variabeglobal="Esta es global";
+    var mifuncion= function(){
+      alert(variabeglobal);
+      variabeglobal="Variable global modificada";
+      alert(variabeglobal);
+      var variablelocal="Esta es local.";
+      alert(variablelocal);
+      var funcionlocal=function(){
+          var variablelocal="Esta variable local, dentro de una funcionlocal "
+          alert(variablelocal);
+      }
+     funcionlocal();
+        }
+        mifuncion();
+    </script>
+</body>
+</html>

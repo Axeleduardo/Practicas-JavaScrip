@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estilos</title>
+    <style>
+        .thumb{
+            width: 200px;
+            transition: 300ms all ease;
+        }
+        .grande{
+            width: 400px;
+        }
+        .titulo{
+            border: 1px solid navy;
+            background: #ccc;
+            padding: 10px;
+        }
+        .titlogrande{
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="encabezado" class="titulo titulogrande"> soy un encabezado</h1>
+    <script>
+        var encabezado=document.getElementById("encabezado");
+        encabezado.style.background="navy";
+        encabezado.style.color="#fff";
+        encabezado.style.paddingTop="20px";
+    </script>
+</body>
+</html>

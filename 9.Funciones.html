@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+
+    <script>
+function saludo(nombre){
+document.write("Hola buen dia tengas"+nombre);
+}
+saludo(" Axel ");
+/*alert("Numero para realizar la suma. ")
+numero1=prompt("Digite el primer numero: ");
+numero2=prompt("Favor digite el segundo numero: ");*/
+//Los comentarios son practicas que hize yo
+suma(5,5);
+function suma(numero1,numero2){
+numero1=numero1;
+numero2=numero2;
+document.write("La suma es: "+(numero1+numero2));
+}
+suma2(3,3);
+function suma2(numero3,numero4){
+    var numero3=numero3;
+    var numero4=numero4;
+    return (" La segunda suma es: "+(numero3+numero4));
+}
+document.write(suma2(3,3));
+
+var s=function suma3(numero5,numero6){
+    if(numero5>numero6){
+        return numero5;
+    }
+        return numero6;
+    
+}
+document.write("<br>");
+document.write(s(3,5));
+/*alert("numeros para realizar la multiplicaciones.");
+numero3=prompt("Favor digite el tercer numero: ");
+numero4=prompt("Favor digite el cuarto numero: ");
+mult(numero3,numero4);
+function mult(numero3,numero4){
+numero3=numero3;
+numero4=numero4;
+document.write("La multiplicacion es: "+(numero3*numero4))
+}
+alert("Numeros para restar.");
+numero5=prompt("Favor digite el primer numero para restar: ");
+numero6=prompt("Favor digite el segundo numero para restar: ");
+resta(numero5,numero6);
+function resta(numero5,numero6){
+numero5=numero5;
+numero6=numero6;
+document.write("La resta es: "+(numero5-numero6));
+}*/
+
+    </script>
+</body>
+</html>

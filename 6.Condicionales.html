@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionles</title>
+</head>
+<body>
+    <script>
+       var nombre,edad,diast,pago;
+       nombre=prompt("Favor digite su nombre: ");
+       edad=prompt("Favor digite su edad: ");
+       diast=prompt("Favor digite sus dias trabajados: ");
+       /*if(edad>=18){
+            document.write("Exelente "+nombre+" eres myor de edad. ");
+       }
+       else if(edad>0 && edad<18){
+           document.write(nombre+" lamentablemente no eres mayor de edad.");
+       }
+       else{document.write("Lamentablemente has escrito una edad inexistente. ")}*/
+       if(edad>=18 && diast>0){
+           pago= diast*100;
+           document.write("Sus dias trabajados fueron de: "+diast+" <br>"+
+           "Su pago sera de "+pago+"\n"+
+           "Su edad es: "+edad);
+       }
+       else{
+        document.write("Datos incorrectos");
+       }
+    </script>
+</body>
+</html>
